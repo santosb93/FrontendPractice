@@ -1,21 +1,39 @@
+p,
+h2,
+h3,
+li,
+ul {
+  margin: 0px;
+}
 section {
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-start;
 }
 #preview {
   display: flex;
-  align-items: flex-start;
   flex-direction: column;
-  justify-content: flex-start;
+  gap: 10px;
   width: 50%;
 }
 #emailList {
   display: flex;
   flex-direction: column;
-  width: 50%;
+  height: 100vh;
+  overflow: scroll;
+}
+#info {
+  text-align: center;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+#from {
+  display: flex;
+  align-items: center;
+  gap: 5px;
 }
 .emailItem {
   display: flex;
-  align-items: center;
-  gap: 10px;
+  flex-direction: column;
+  border: 1px solid black;
 }

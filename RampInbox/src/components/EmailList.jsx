@@ -3,7 +3,8 @@ import EmailItem from './EmailItem.jsx';
 
 const EmailList = ({ emails, setPreview }) => {
   return (
-    <div id='emailList'>
+    <ul id='emailList'>
+      <h1>Email List</h1>
       {emails.map((email, i) => (
         <EmailItem
           key={email.from + i}
@@ -14,7 +15,7 @@ const EmailList = ({ emails, setPreview }) => {
           time={email.time}
         />
       ))}
-    </div>
+    </ul>
   );
 };
 

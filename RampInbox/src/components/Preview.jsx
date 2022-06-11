@@ -3,20 +3,23 @@ import React from 'react';
 const Preview = ({ email }) => {
   console.log(email);
   return (
-    <section id='preview'>
-      <div id='header'>
-        <h1>Subject:</h1>
-        <p>{email ? email.subject : ''}</p>
+    <div id='preview'>
+      <h1>Preview</h1>
+      <div id='preview__header'>
+        <div>
+          <h2>Subject:</h2>
+          <p>{email.subject}</p>
+        </div>
         <h3>From:</h3>
-        <p>{email ? email.from : ''}</p>
+        <p>{email.from}</p>
         <h3>time:</h3>
-        <p>{email ? email.time : ''}</p>
+        <p>{email.time}</p>
       </div>
-      <div id='body'>
-        <h1>Message:</h1>
-        <p>{email ? email.message : ''}</p>
+      <div id='preview__message'>
+        <h2>Message:</h2>
+        <p>{email.message}</p>
       </div>
-    </section>
+    </div>
   );
 };
 

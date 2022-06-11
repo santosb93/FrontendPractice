@@ -9,7 +9,9 @@ const App = () => {
   useEffect(() => {
     fetch(
       'https://gist.githubusercontent.com/Jsarihan/d5f8cd2d159d676fbfb2fab94750635e/raw/b54cc1bd819b157a93bde00fe059825002f1f602/email.json',
-      { method: 'GET' }
+      {
+        method: 'GET',
+      }
     )
       .then((res) => res.json())
       .then((data) => {
@@ -21,7 +23,7 @@ const App = () => {
   return (
     <section>
       <EmailList emails={emails} setPreview={setPreview} />
-      {preview !== -1 ? <Preview email={emails[preview]} /> : []}
+      {preview !== -1 ? <Preview email={emails[preview]} /> : <h1>Preview</h1>}
     </section>
   );
 };
