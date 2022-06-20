@@ -1,6 +1,8 @@
 import React, { useEffect, useRef, useState } from 'react';
 import './css/styles.css';
 import Message from './components/Message.js';
+import DebounceButton from './components/DebounceButton';
+import ThrottleButton from './components/ThrottleButton';
 
 export default function App() {
   const [formInput, setFormInput] = useState({
@@ -88,6 +90,10 @@ export default function App() {
           />
           <button onClick={handleSubmit}>Submit</button>
         </form>
+      </div>
+      <div>
+        <ThrottleButton />
+        <DebounceButton />
       </div>
     </div>
   );
