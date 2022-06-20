@@ -1,0 +1,35 @@
+.App {
+  font-family: sans-serif;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  height: 100vh;
+  align-items: center;
+}
+
+.form-container {
+  width: 300px;
+  background-color: lightgrey;
+}
+form {
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+input {
+  padding: 10px;
+}
+
+button {
+  padding: 10px;
+}
+.message {
+  color: white;
+}
+.message--success {
+  background-color: green;
+}
+.message--failure {
+  background-color: red;
+}
