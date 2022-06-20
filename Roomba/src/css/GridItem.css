@@ -1,0 +1,7 @@
+#item {
+  border: 1px solid black;
+  display: inline-block;
+  width: 60px;
+  height: 60px;
+  text-align: center;
+}
